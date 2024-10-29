@@ -2,21 +2,18 @@ import React ,{useState,useEffect}from 'react'
 import service from '../appwrite/config'
 import Container from '../components/container/Container'
 import PostCard from '../components/PostCard'
-import { useSelector } from 'react-redux'
+// import { useSelector } from 'react-redux'
 
 function Home() {
     const [posts,setPosts] = useState([]);
-    const status = useSelector((state) => state.auth.status)
-
     useEffect(()=>{
-        if(status){
+        
         service.getPosts().then((posts)=>{
             if(posts){
                 setPosts(posts.documents);
             }
         })
-    }
-       
+           
     },[])
     if(posts.length === 0){
         return (

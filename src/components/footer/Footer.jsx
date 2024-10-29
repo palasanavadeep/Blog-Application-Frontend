@@ -4,7 +4,7 @@ import Logo from "../Logo";
 
 function Footer() {
   return (
-    <section className="relative overflow-hidden py-10 bg-gray-400 border border-t-2 border-t-black">
+    <section className="relative overflow-hidden py-10 bg-blue-200 border border-t-2 border-t-blue-300 rounded-b-lg">
       <div className="relative z-10 mx-auto max-w-7xl px-4">
         <div className="-m-6 flex flex-wrap">
           <div className="w-full p-6 md:w-1/2 lg:w-5/12">
@@ -14,7 +14,7 @@ function Footer() {
               </div>
               <div>
                 <p className="text-sm text-gray-600">
-                  &copy; Copyright 2023. All Rights Reserved by DevUI.
+                  &copy; Copyright 2023. All Rights Reserved by Palasa.
                 </p>
               </div>
             </div>
@@ -46,7 +46,7 @@ function Footer() {
                     className=" text-base font-medium text-gray-900 hover:text-gray-700"
                     to="/"
                   >
-                    Affiliate Program
+                    About Us
                   </Link>
                 </li>
                 <li>
@@ -54,7 +54,7 @@ function Footer() {
                     className=" text-base font-medium text-gray-900 hover:text-gray-700"
                     to="/"
                   >
-                    Press Kit
+                    Join Us
                   </Link>
                 </li>
               </ul>
