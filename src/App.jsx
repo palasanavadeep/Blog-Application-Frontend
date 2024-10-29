@@ -11,10 +11,10 @@ import  {Outlet} from 'react-router-dom'
 function App() {
   const [loading, setLoading] = useState(true)
   const dispatch = useDispatch()
-  // const status = useSelector((state) => state.auth.status)
+  const status = useSelector((state) => state.auth.status)
 
   useEffect(()=>{
-    // if(status){
+    if(status){
       authService.getCurrentUser()
     .then((userData)=>{
       if(userData){
@@ -24,8 +24,8 @@ function App() {
       }
     })
     .finally(()=> setLoading(false))
-    // }
-    // setLoading(false)
+    }
+    setLoading(false)
   },[])
   
     
